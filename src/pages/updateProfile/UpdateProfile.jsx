@@ -5,7 +5,7 @@ import Navbar from "../../shared/Navbar/Navbar";
 
 const UpdateProfile = () => {
     return (
-        <div>
+        <div className="container mx-auto">
             <Helmet><title>Nexus Commercial - Update Profile</title></Helmet>
             <Navbar></Navbar>
             updating
