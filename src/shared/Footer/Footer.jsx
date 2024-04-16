@@ -3,7 +3,7 @@ import { FaSquareTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-base-100 text-base-content">
+    <footer className="footer footer-center p-10 bg-base-200 text-base-content">
       <aside>
         <img
           className="text-white"

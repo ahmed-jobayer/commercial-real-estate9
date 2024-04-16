@@ -16,7 +16,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="container mx-auto">
+    <nav className="container mx-auto ">
       <div className="navbar-start w-full text-center my-4">
         <Link to='/'>Nexus Commercial</Link>
       </div>
