@@ -7,8 +7,8 @@ import { AuthContext } from "../../providers/AuthProviders";
 
 const Register = () => {
 
-  const [registerSuccess, setRegisterSuccess] = useState()
-  const [registerError, setRegisterError] = useState()
+  // const [registerSuccess, setRegisterSuccess] = useState()
+  // const [registerError, setRegisterError] = useState()
 
 
   const {createUser} = useContext (AuthContext);
@@ -23,8 +23,8 @@ const Register = () => {
     console.log(name, email, photo, password)
 
     // reset error and success
-    setRegisterSuccess('');
-    setRegisterError('');
+    // setRegisterSuccess('');
+    // setRegisterError('');
 
     // password validation
     if (password.length < 6) {
@@ -48,11 +48,13 @@ const Register = () => {
     createUser(email, password)
     .then(result => {
       console.log(result.user)
-      setRegisterSuccess('User registered successfully');
+      // setRegisterSuccess('User registered successfully');
+      alert('User registered successfully');
     })
     .catch(error => {
       console.error(error)
-      setRegisterError(error.message)
+      // setRegisterError(error.message)
+      alert(error.message)
     })
   }
 
@@ -120,10 +122,10 @@ const Register = () => {
               </div>
             </form>
 
-            <div className="text-center px-8 pb-4">
+            {/* <div className="text-center px-8 pb-4">
           {registerSuccess && <p className="text-green-500 ">{registerSuccess}</p>}
           {registerError && <p className="text-red-500">{registerError}</p>}
-        </div>
+        </div> */}
            
             <p className="block text-center mb-4">
               Already have an account?{" "}

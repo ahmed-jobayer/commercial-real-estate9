@@ -1,6 +1,6 @@
 const HomeSlider = () => {
   return (
-    <div className="carousel w-full">
+    <div className="carousel w-full m-2">
       <div id="slide1" className="carousel-item relative w-full">
         <img
           src="https://imgur.com/SIwccDQ.png"

@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://imgur.com/cbl0wyV.png",
+      "estate_title": "Modern Office Building in Downtown",
+      "segment_name": "Office Space",
+      "description": "This modern office building features state-of-the-art facilities and a prime location in the heart of the city.",
+      "price": 5000000,
+      "status": "rent",
+      "area": "2000 sq ft",
+      "location": "Downtown Business District",
+      "facilities": ["High-speed internet", "Parking facilities", "Security services"]
+    },
+    {
+      "id": 2,
+      "image": "https://imgur.com/nfqRres.png",
+      "estate_title": "Retail Space on Main Street",
+      "segment_name": "Retail Space",
+      "description": "Spacious retail space located on the bustling Main Street, perfect for a variety of businesses.",
+      "price": 3000,
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "Main Street",
+      "facilities": ["Storefront display", "Central air conditioning", "Security system"]
+    },
+    {
+      "id": 3,
+      "image": "https://imgur.com/AQPIa8k.png",
+      "estate_title": "Industrial Warehouse Facility",
+      "segment_name": "Industrial Space",
+      "description": "Large industrial warehouse facility with loading docks and ample parking space.",
+      "price": 10000000,
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Industrial Zone",
+      "facilities": ["Loading docks", "Large parking area", "Heavy-duty utilities"]
+    },
+    {
+      "id": 4,
+      "image": "https://imgur.com/5XHCcVm.png",
+      "estate_title": "Luxury Office Building in Financial District",
+      "segment_name": "Office Space",
+      "description": "Luxury office building located in the prestigious Financial District, offering premium amenities and stunning views.",
+      "price": 8000000,
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Financial District",
+      "facilities": ["24/7 security", "Fitness center", "Conference rooms"]
+    },
+    {
+      "id": 5,
+      "image": "https://imgur.com/RyiWkYP.png",
+      "estate_title": "Commercial Building with Multiple Tenants",
+      "segment_name": "Mixed-Use Space",
+      "description": "Well-maintained commercial building with multiple tenants and steady rental income.",
+      "price": 12000000,
+      "status": "sale",
+      "area": "8000 sq ft",
+      "location": "Business District",
+      "facilities": ["Elevator access", "On-site management", "Retail storefronts"]
+    },
+    {
+      "id": 6,
+      "image": "https://imgur.com/6x3vQ7z.png",
+      "estate_title": "Flexible Warehouse Space for Lease",
+      "segment_name": "Warehouse Space",
+      "description": "Versatile warehouse space available for lease, suitable for various industrial and storage needs.",
+      "price": 5000,
+      "status": "rent",
+      "area": "1800 sq ft",
+      "location": "Industrial Park",
+      "facilities": ["Drive-in access", "Forklift services", "Climate control"]
+    }
+  ]
+  
