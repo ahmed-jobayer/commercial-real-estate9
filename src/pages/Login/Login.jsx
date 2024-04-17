@@ -4,14 +4,76 @@ import Footer from "../../shared/Footer/Footer";
 import { Link } from "react-router-dom";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../providers/AuthProviders";
 
 const Login = () => {
+
+  const {loginUser, googleLogin, githubLogin} = useContext(AuthContext)
+
+  // const [loginSuccess, setLoginSuccess] = useState();
+  // const [loginError, setLoginError] = useState();
 
   const handleLogin = e => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
-    console.log(form.get('email'))
-    console.log(form.get('password'))
+    const email = form.get('email')
+    const password = form.get('password')
+    console.log(email, password)
+
+    // reset error or success
+    // setLoginSuccess('');
+    // setLoginError('');
+
+   loginUser(email, password)
+   .then(result =>{
+    console.log(result.user)
+    alert('User logged in successfully')
+    // setLoginSuccess('User logged in successfully')
+   
+   })
+   .catch(error =>{
+    console.error(error)
+    alert(error.message)
+    // setLoginError(error.message)
+   })
+  }
+// google login
+
+  const handleGoogleLogin = e =>{
+    e.preventDefault()
+    googleLogin()
+    .then(result =>{
+      console.log(result.user)
+      alert('User logged in successfully')
+      // setLoginSuccess('User logged in successfully')
+     
+     })
+     .catch(error =>{
+      console.error(error)
+      alert(error.message)
+      // setLoginError(error.message)
+     })
+    
+  }
+
+  // github login
+
+  const handleGitHubLogin = e =>{
+    e.preventDefault()
+    githubLogin()
+    .then(result =>{
+      console.log(result.user)
+      alert('User logged in successfully')
+      // setLoginSuccess('User logged in successfully')
+     
+     })
+     .catch(error =>{
+      console.error(error)
+      alert(error.message)
+      // setLoginError(error.message)
+     })
+    
   }
 
   return (
@@ -47,25 +109,29 @@ const Login = () => {
                   className="input input-bordered"
                   required
                 />
-                <label className="label">
+                {/* <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
                   </a>
-                </label>
+                </label> */}
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
+            {/* <div className="text-center px-8 pb-4">
+          {loginError &&  <p className="text-red-500">{loginError}</p>}
+          {loginSuccess && <p className="text-green-500 ">{loginSuccess}</p>}
+        </div> */}
             <div className="">
               <p className="block text-center">or</p>
               <div className="my-4 flex flex-col justify-center gap-3">
-                <button className="flex items-center justify-center gap-3">
+                <button onClick={handleGoogleLogin} className="flex items-center justify-center gap-3">
                   <AiFillGoogleCircle className="text-4xl" /> Continue With
                   Google
                 </button>
-                <button className="flex items-center justify-center gap-3">
-                  <FaGithub className="text-3xl" /> Continue With Google
+                <button onClick={handleGitHubLogin} className="flex items-center justify-center gap-3">
+                  <FaGithub className="text-3xl" /> Continue With GitHub
                 </button>
               </div>
             </div>
