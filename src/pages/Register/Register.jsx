@@ -4,11 +4,13 @@ import Footer from "../../shared/Footer/Footer";
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
+import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 
 const Register = () => {
 
   // const [registerSuccess, setRegisterSuccess] = useState()
   // const [registerError, setRegisterError] = useState()
+  const [togglePass, setTogglePass] = useState(false)
 
 
   const {createUser} = useContext (AuthContext);
@@ -109,13 +111,22 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  className="input input-bordered"
-                  required
-                />
+                <div className="relative">
+           <input
+              type={ togglePass? "text" : "password"}
+              name="password"
+              placeholder="password"
+              className="input input-bordered w-full"
+              required
+              />
+              <span 
+              className="absolute top-1/3 right-2 cursor-pointer"
+              onClick={()=> setTogglePass(!togglePass)}>
+                {
+                    togglePass? <BsFillEyeSlashFill></BsFillEyeSlashFill> : <BsFillEyeFill></BsFillEyeFill>
+                }
+              </span>
+           </div>
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
