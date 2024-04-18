@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Emily Smith",
+        "description": "Emily is a seasoned commercial real estate broker with over 10 years of experience. She specializes in retail and office spaces, helping clients find the perfect locations to grow their businesses. Her keen eye for detail and negotiation skills make her a valuable asset to any client.",
+        "image": "https://imgur.com/wdnwKdW.png"
+    },
+    {
+        "name": "David Johnson",
+        "description": "David is a dynamic commercial real estate broker known for his exceptional market knowledge and strategic approach. With a background in finance, he provides clients with insightful investment advice and helps them navigate complex transactions. His dedication and integrity ensure that clients achieve their real estate goals efficiently.",
+        "image": "https://imgur.com/BSQrMr6.png"
+    },
+    {
+        "name": "Michael Thompson",
+        "description": "Michael is a results-driven commercial real estate broker with a passion for delivering top-notch service to his clients. Specializing in industrial properties, he excels in identifying lucrative investment opportunities and guiding clients through every step of the transaction process. His commitment to excellence sets him apart in the industry.",
+        "image": "https://imgur.com/gnHqM57.png"
+    }
+]

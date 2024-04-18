@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../shared/Navbar/Navbar";
 import Footer from "../../shared/Footer/Footer";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { useContext, useState } from "react";
@@ -10,6 +10,9 @@ import { AuthContext } from "../../providers/AuthProviders";
 const Login = () => {
 
   const {loginUser, googleLogin, githubLogin} = useContext(AuthContext)
+  const location = useLocation();
+  const navigate = useNavigate()
+  
 
   // const [loginSuccess, setLoginSuccess] = useState();
   // const [loginError, setLoginError] = useState();
@@ -29,6 +32,10 @@ const Login = () => {
    .then(result =>{
     console.log(result.user)
     alert('User logged in successfully')
+
+    // navigate after login 
+    navigate(location?.state ? location.state : '/'  )
+
     // setLoginSuccess('User logged in successfully')
    
    })
@@ -46,6 +53,10 @@ const Login = () => {
     .then(result =>{
       console.log(result.user)
       alert('User logged in successfully')
+
+      // navigate after login 
+    navigate(location?.state ? location.state : '/'  )
+
       // setLoginSuccess('User logged in successfully')
      
      })
@@ -65,6 +76,9 @@ const Login = () => {
     .then(result =>{
       console.log(result.user)
       alert('User logged in successfully')
+
+      // navigate after login 
+    navigate(location?.state ? location.state : '/'  )
       // setLoginSuccess('User logged in successfully')
      
      })

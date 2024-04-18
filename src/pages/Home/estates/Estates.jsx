@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Estates = ({ estate }) => {
-  const { estate_title, image, segment_name, status, price } = estate;
+  const { estate_title, image, segment_name, status, price, id } = estate;
 
   return (
     <div className=" ">
@@ -9,7 +9,7 @@ const Estates = ({ estate }) => {
         <figure>
           <img
             src={image}
-            alt="Shoes"
+            alt={segment_name}
           />
         </figure>
         <div className="card-body">
@@ -20,7 +20,7 @@ const Estates = ({ estate }) => {
             <p className="text-end">For {status}</p>
           </div>
           <div className="card-actions justify-end">
-            <Link>
+            <Link to={`/estateDetails/${id}`}>
             <button className="btn ">View Property</button>
             </Link>
           </div>
