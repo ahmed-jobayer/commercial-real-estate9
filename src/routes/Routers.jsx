@@ -8,6 +8,7 @@ import Error from "../pages/error page/Error";
 import EstateDetails from "../pages/Home/estates/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
 import Brockers from "../pages/Brockers/Brockers";
+import EditProfile from "../pages/updateProfile/EditProfile";
 
 
 
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
             },
             {
                 path:'/updateProfile',
-                element: <UpdateProfile></UpdateProfile>
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+            },
+            {
+                path: '/editProfile',
+                element: <EditProfile></EditProfile>
             },
             {
                 path:'/estateDetails/:id',

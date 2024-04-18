@@ -18,7 +18,7 @@ const Navbar = () => {
       </li>
       <li className="btn p-2">
         {" "}
-        <NavLink to="/updateProfile">Update Profile</NavLink>{" "}
+        <NavLink to="/updateProfile">Profile</NavLink>{" "}
       </li>
     </>
   );
@@ -27,7 +27,7 @@ const Navbar = () => {
     <div>
       <nav className="container mx-auto ">
         <div className="navbar-start w-full text-center my-4">
-          <Link to="/">Nexus Commercial</Link>
+          <Link className="font-bold text-3xl" to="/">Nexus Commercial</Link>
         </div>
         <div className=" bg-base-100 flex justify-between items-center mb-4">
           <div className=" ">
@@ -40,7 +40,7 @@ const Navbar = () => {
                   <img
                     className="rounded-2xl"
                     alt={user.displayName}
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    src={user.photoURL}
                   />
                 </div>
 

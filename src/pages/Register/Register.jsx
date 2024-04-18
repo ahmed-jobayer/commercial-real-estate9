@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../shared/Navbar/Navbar";
 import Footer from "../../shared/Footer/Footer";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate, } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
@@ -14,6 +14,9 @@ const Register = () => {
 
 
   const {createUser} = useContext (AuthContext);
+
+  const location = useLocation()
+  const navigate = useNavigate()
 
   const handleRegister = e => {
     e.preventDefault();
@@ -47,11 +50,12 @@ const Register = () => {
 
     // create User
 
-    createUser(email, password)
+    createUser(email, password, name, photo )
     .then(result => {
       console.log(result.user)
       // setRegisterSuccess('User registered successfully');
       alert('User registered successfully');
+      navigate(location?.state ? location.state : '/'  )
     })
     .catch(error => {
       console.error(error)
