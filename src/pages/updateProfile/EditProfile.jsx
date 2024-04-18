@@ -67,7 +67,7 @@ const EditProfile = () => {
               </div>
               
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Update Profile</button>
+                <button className="btn bg-zinc-600">Update Profile</button>
               </div>
             </form>
 

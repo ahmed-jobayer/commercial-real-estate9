@@ -22,7 +22,7 @@ const UpdateProfile = () => {
                 <img className="rounded-xl max-w-40" src={photoURL} alt="" />
                 <h3>{email}</h3>
                 <h1>{displayName}</h1>
-                <Link to='/editProfile'><button className="btn">Edit Profile</button></Link>
+                <Link to='/editProfile'><button className="btn bg-zinc-600">Edit Profile</button></Link>
             </div>
         </div>
             <Footer></Footer>

@@ -21,7 +21,7 @@ const Estates = ({ estate }) => {
           </div>
           <div className="card-actions justify-end">
             <Link to={`/estateDetails/${id}`}>
-            <button className="btn ">View Property</button>
+            <button className="btn bg-zinc-600">View Property</button>
             </Link>
           </div>
         </div>

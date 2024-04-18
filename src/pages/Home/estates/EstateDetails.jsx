@@ -20,7 +20,8 @@ const EstateDetails = () => {
     facilities,
 } = estate
   return (
-    <div className="container mx-auto m-4">
+    <div>
+      <div className="container mx-auto m-4">
         <Navbar></Navbar>
       
       <div className="card  lg:card-side bg-base-100 shadow-xl">
@@ -60,8 +61,9 @@ const EstateDetails = () => {
         </div>
       </div>
       <div className="flex justify-center m-4">
-        <Link to='/brockers'><button className="btn ">Contact Brockers</button></Link>
+        <Link to='/brockers'><button className="btn bg-zinc-600">Contact Brockers</button></Link>
       </div>
+    </div>
       <Footer></Footer>
     </div>
   );

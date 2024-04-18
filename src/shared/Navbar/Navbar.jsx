@@ -12,11 +12,11 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li className=" btn mr-1 p-2 md:mr-3">
+      <li className=" btn bg-zinc-600 mr-1 p-2 md:mr-3">
         {" "}
         <NavLink to="/">Home</NavLink>{" "}
       </li>
-      <li className="btn p-2">
+      <li className="btn bg-zinc-600 p-2">
         {" "}
         <NavLink to="/updateProfile">Profile</NavLink>{" "}
       </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
     <div>
       <nav className="container mx-auto ">
         <div className="navbar-start w-full text-center my-4">
-          <Link className="font-bold text-3xl" to="/">Nexus Commercial</Link>
+          <Link className="font-bold text-3xl text-zinc-400" to="/">Nexus Commercial</Link>
         </div>
         <div className=" bg-base-100 flex justify-between items-center mb-4">
           <div className=" ">
@@ -46,13 +46,13 @@ const Navbar = () => {
 
                 <li
                   onClick={handleLogOut}
-                  className="btn mr-1 p-2 md:p-4 md:mr-3"
+                  className="btn bg-zinc-600 mr-1 p-2 md:p-4 md:mr-3"
                 >
                   <NavLink to="">Log Out</NavLink>
                 </li>
               </div>
             ) : (
-              <li className="btn mr-1 p-2 md:p-4 md:mr-3">
+              <li className="btn bg-zinc-600 mr-1 p-2 md:p-4 md:mr-3">
                 <NavLink to="/login">Login</NavLink>
               </li>
             )}
