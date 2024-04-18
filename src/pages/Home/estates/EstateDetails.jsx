@@ -27,12 +27,12 @@ const EstateDetails = () => {
       <div className="card  lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img
-          className="rounded-2xl"
+          className="rounded-2xl sm:px-3"
             src={image}
             alt="Album"
           />
         </figure>
-        <div className="flex flex-col  ml-4 gap-4">
+        <div className="flex flex-col  ml-4 gap-4  pr-3">
           <h2 className="card-title">{estate_title}</h2>
           <p><span className="text-xl">Property Type</span>: {segment_name}</p>
           <div>
