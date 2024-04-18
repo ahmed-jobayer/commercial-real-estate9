@@ -1,8 +1,13 @@
-# React + Vite
+Website Name: Nexus Commercial
+Website Link: https://assignment-9-commercial-real-e.web.app/
+Features:
+  1. A standard website for commercial real estate
+  2. User can sign up with 3 different method like email, google and github
+  3. user can update there name and profile photo
+  4. there is some private component that can only access the registered users
+  5. userinfo will not be disappear after refreshing the page.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm packages :
+  1. AOS Package,
+  2. Animate.css,
+  3. Swiper slider

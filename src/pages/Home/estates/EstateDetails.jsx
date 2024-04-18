@@ -22,7 +22,7 @@ const EstateDetails = () => {
   return (
     <div className="container mx-auto m-4">
         <Navbar></Navbar>
-      comming soon {id}
+      
       <div className="card  lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img

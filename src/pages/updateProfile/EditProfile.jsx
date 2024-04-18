@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Footer from "../../shared/Footer/Footer";
 import Navbar from "../../shared/Navbar/Navbar";
 import { AuthContext } from "../../providers/AuthProviders";
+import 'animate.css';
 
 const EditProfile = () => {
 
@@ -37,7 +38,7 @@ const EditProfile = () => {
       <div className="container mx-auto min-h-screen">
         <Navbar></Navbar>
         <div className="hero mt-16 bg-base-100">
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 animate__animated animate__bounce">
             <form onSubmit={handleProfileUpdate} className="card-body">
               <div className="form-control">
                 <label className="label">

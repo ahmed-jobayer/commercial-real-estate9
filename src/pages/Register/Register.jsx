@@ -67,6 +67,7 @@ const Register = () => {
   return (
     
     <div>
+      
       <div className="container mx-auto">
         <Helmet>
           <title>Nexus Commercial - Register</title>

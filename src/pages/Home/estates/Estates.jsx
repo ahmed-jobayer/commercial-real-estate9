@@ -4,7 +4,7 @@ const Estates = ({ estate }) => {
   const { estate_title, image, segment_name, status, price, id } = estate;
 
   return (
-    <div className=" ">
+    <div data-aos = "fade-top" className=" ">
       <div className="card card-compact bg-base-100 shadow-xl">
         <figure>
           <img
